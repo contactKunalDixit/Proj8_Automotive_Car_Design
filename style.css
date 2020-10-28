@@ -174,29 +174,3 @@ font-size: 1rem;
 }
 
 
-/* 
-
-@media only screen and (max-width: 600px) {
-    body {
-        display: flex;
-        flex-direction: column;
-    }
-
-    header {
-        display: flex;
-        flex-direction: column;
-    }
-
-    footer {
-        height: 100%;
-    }
-
-    footer ul {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    ;
-
-} */
