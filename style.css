@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fff;
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+}
+
+header {
+    background-image: url("guille-sanchez-9nxrdT2SMCg-unsplash\ \(1\).jpg");
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    /* min-height:100vh; Use below instead*/
+    min-height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 900px;
+
+
+}
+
+nav {
+
+    display: flex;
+    justify-content: space-between;
+
+}
+
+nav .logo {
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+
+
+
+}
+
+
+
+nav li a {
+    color: white;
+    /* padding: 1rem; */
+    margin: 1rem;
+    text-decoration: none;
+
+
+}
+
+.highlight {
+    background-color: #0e5597;
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.selected {
+    font-weight: bold;
+}
+
+
+.mainSec {
+
+    margin: 30px auto;
+    font-size: 2rem;
+    text-align: center;
+
+
+}
+
+.mainSec h1 {
+    color: #1195e2;
+
+}
+.mainSec button{
+    font-size:1.5rem;
+}
+footer {
+    height: 100px;
+    background-color: black;
+    color: white;
+    padding: 1rem 0 1rem 0;
+
+
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+
+
+
+
+}
+
+footer strong {
+    color: #1195e2;
+    
+}
+footer p{
+font-size: 1rem;
+}
+
+
+
+/* Responsive Properties */
+
+@media screen and (max-width:800px) {
+
+    header {
+        font-size: 0.85rem;
+        align-items: center;
+    }
+
+    body {
+        min-width:670px;
+    }
+
+    nav li:not(:last-child) {
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    footer {
+        height: 100%;
+
+    }
+
+    footer ul {
+        justify-content: space-evenly;
+    }
+
+    .mainSec {
+        font-size: 1.2rem;
+        margin: 2rem auto 0
+    }
+
+    .mainSec button{
+        font-size:1.5rem;
+    }
+    nav li a {
+        text-align: center;
+    }
+}
+
+
+/* 
+
+@media only screen and (max-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    ;
+
+} */
