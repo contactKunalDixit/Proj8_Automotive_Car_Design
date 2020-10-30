@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
 
+html {
+    font-size: 16px;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -8,9 +12,14 @@ body {
     background-color: #fff;
     font-family: "Roboto", sans-serif;
     margin: 0;
+    background-color: rgb(158, 24, 24);
 }
 
+/*! *********** ! Header Properties         **************  */
+
 header {
+    width: 100%;
+    height: auto;
     background-image: url("guille-sanchez-9nxrdT2SMCg-unsplash\ \(1\).jpg");
     background-size: cover;
     background-position: center center;
@@ -19,51 +28,46 @@ header {
     min-height: calc(100vh - 100px);
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    justify-content: flex-start;
 
+
+}
+
+.logo p {
+    margin: 0;
 }
 
 .container {
     margin: 0 auto;
-    max-width: 100%;
-    width: 900px;
+    width:100%;
+    max-width:1000px;
 
 
 }
 
 nav {
-
     display: flex;
     justify-content: space-between;
-
 }
 
 nav .logo {
     font-size: 2.5rem;
     text-align: center;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-around;
+
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
     text-align: center;
-
-
-
 }
 
 
 
 nav li a {
     color: white;
-    /* padding: 1rem; */
     margin: 1rem;
     text-decoration: none;
-
-
 }
 
 .highlight {
@@ -80,7 +84,7 @@ nav li a {
 
 .mainSec {
 
-    margin: 30px auto;
+    
     font-size: 2rem;
     text-align: center;
 
@@ -91,70 +95,79 @@ nav li a {
     color: #1195e2;
 
 }
-.mainSec button{
-    font-size:1.5rem;
+
+.mainSec button {   
+    font-size: 1.5rem;
 }
+
 footer {
     height: 100px;
     background-color: black;
     color: white;
-    padding: 1rem 0 1rem 0;
+    /* padding: 1rem 0 1rem 0; */
+    padding:1rem;
 
 
 }
 
 footer ul {
     display: flex;
-    justify-content: space-evencd Gitly;
+    justify-content: space-between;
     list-style-type: none;
-
-
-
-
+    margin: 1rem;
 }
 
 footer strong {
     color: #1195e2;
-    
-}
-footer p{
-font-size: 1rem;
 }
 
+footer p {
+    font-size: 1rem;
+}
 
 
-/* Responsive Properties */
 
-@media screen and (max-width:800px) {
+/*! Responsive Properties */
+
+@media only screen and (max-width: 1000px) {}
+
+/* @media screen and (max-width:800px)  {
 
     header {
         font-size: 0.85rem;
         align-items: center;
-    }
+        width:100%;
+        height:auto;
+        display:flex;
+        flex-direction:column;
 
-    body {
-        min-width:670px;
-    }
+        
+        
 
+    }
+.logo{
+    text-align: center;
+}
+   
     nav li:not(:last-child) {
         margin-bottom: 1rem;
     }
 
     .container {
-        width: 50%;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         flex-direction: column;
+       
     }
 
     nav ul {
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
+
+/* margin: 0 auto;
     }
 
-    footer {
-        height: 100%;
-
-    }
+   
 
     footer ul {
         justify-content: space-evenly;
@@ -169,8 +182,17 @@ font-size: 1rem;
         font-size:1.5rem;
     }
     nav li a {
-        text-align: center;
-    }
+        /* text-align: center; */
+/* }
 }
 
-
+/* 
+@media screen and (max-width:500px){
+.wholeContainer{
+    width:100%;
+    height:auto;
+    color:rgb(211, 0, 35);
+    background-size: cover;
+    background-position: center center;
+}
+} */
