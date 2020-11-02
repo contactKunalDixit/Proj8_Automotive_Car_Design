@@ -20,6 +20,7 @@ body {
 header {
     width: 100%;
     height: auto;
+    padding: 1rem;
     background-image: url("guille-sanchez-9nxrdT2SMCg-unsplash\ \(1\).jpg");
     background-size: cover;
     background-position: center center;
@@ -39,8 +40,8 @@ header {
 
 .container {
     margin: 0 auto;
-    width:100%;
-    max-width:1000px;
+    width: 100%;
+    max-width: 1000px;
 
 
 }
@@ -53,6 +54,8 @@ nav {
 nav .logo {
     font-size: 2.5rem;
     text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
 
 }
 
@@ -84,8 +87,8 @@ nav li a {
 
 .mainSec {
 
-    
-    font-size: 2rem;
+
+    font-size: 1.8rem;
     text-align: center;
 
 
@@ -96,7 +99,7 @@ nav li a {
 
 }
 
-.mainSec button {   
+.mainSec button {
     font-size: 1.5rem;
 }
 
@@ -105,7 +108,7 @@ footer {
     background-color: black;
     color: white;
     /* padding: 1rem 0 1rem 0; */
-    padding:1rem;
+    padding: 1rem;
 
 
 }
@@ -129,70 +132,76 @@ footer p {
 
 /*! Responsive Properties */
 
-@media only screen and (max-width: 1000px) {}
+@media only screen and (max-width: 768px) {
 
-/* @media screen and (max-width:800px)  {
-
-    header {
-        font-size: 0.85rem;
-        align-items: center;
-        width:100%;
-        height:auto;
+    .container {
+        width: 100%;
+        max-width: 768px;
         display:flex;
-        flex-direction:column;
-
-        
-        
+        align-items: baseline;
 
     }
-.logo{
-    text-align: center;
+
+    header {
+        justify-content: flex-start;
+    }
+
+
+    nav .logo {
+        font-size: 2rem;
+    }
+
+
+    .mainSec {
+        font-size: 1.5rem;
+
+    }
+
+    .highlight {
+        padding: 0.7rem;
+    }
+
+    .mainSec button {
+        font-size: 1.4rem;
+    }
 }
-   
-    nav li:not(:last-child) {
-        margin-bottom: 1rem;
+
+
+@media only screen and (max-width: 685px) {
+
+
+    .mainSec button {
+        font-size: 1.3rem;
     }
 
     .container {
         width: 100%;
-        margin: 0 auto;
+        max-width: 685px;
+
+    }
+
+    nav .logo {
+        font-size: 1.7rem;
+
+    }
+}
+
+@media only screen and (max-width: 641px) {
+   .WholeContainer{
+       min-width:385px ;
+       min-height:100vh+100px;
+   }
+   
+    nav  {
         display: flex;
         flex-direction: column;
-       
     }
 
-    nav ul {
-        /* flex-wrap: wrap; */
-
-/* margin: 0 auto;
+    .navUL, .logo{
+        margin:16px auto;
     }
 
-   
-
-    footer ul {
-        justify-content: space-evenly;
+    footer ul{
+        flex-wrap: wrap;
     }
-
-    .mainSec {
-        font-size: 1.2rem;
-        margin: 2rem auto 0
-    }
-
-    .mainSec button{
-        font-size:1.5rem;
-    }
-    nav li a {
-        /* text-align: center; */
-/* }
 }
-
-/* 
-@media screen and (max-width:500px){
-.wholeContainer{
-    width:100%;
-    height:auto;
-    color:rgb(211, 0, 35);
-    background-size: cover;
-    background-position: center center;
-}
-} */
