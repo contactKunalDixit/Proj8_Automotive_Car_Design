@@ -193,9 +193,8 @@ footer p {
    
     .container {
         width: 100%;
-        max-width: 641px;
-
     }
+
     nav  {
         display: flex;
         flex-direction: column;
