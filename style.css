@@ -12,7 +12,7 @@ body {
     background-color: #fff;
     font-family: "Roboto", sans-serif;
     margin: 0;
-    background-color: rgb(27, 12, 78);
+    background-color: rgb(35, 255, 145);
 }
 
 /*! *********** ! Header Properties         **************  */
@@ -191,7 +191,11 @@ footer p {
 
 @media only screen and (max-width: 641px) {
    
-   
+    .container {
+        width: 100%;
+        max-width: 641px;
+
+    }
     nav  {
         display: flex;
         flex-direction: column;
@@ -206,15 +210,19 @@ footer p {
     } 
 
     footer ul{
-        /* margin:0.5rem; */
+        
         display:flex;
         flex-direction: column;
-        /* align-items: center; */
+        
         justify-content: center;
     }
 
-    footer ul {
-        width: 50;
-        margin:0px auto;
+    .mainSec{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .mainSec h1{
+        margin-bottom:250px;
     }
 }
